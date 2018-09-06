@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <!-- Bootstrap CSS -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
+<link rel="stylesheet" href="C:\Users\Giri Prakash\Desktop\Github\technotelengine.github.io\home.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <title>TechnotelEngine</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark 	">
+	 <a class="navbar-brand" href="#">TechnotelEngine</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse  justify-content-end " id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#about">About <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="C:\Users\Giri Prakash\Desktop\Github\technotelengine.github.io\signup.html"><!button type="button" class="btn btn-outline-primary"!>Login-signup<!/button!><span class="sr-only"></span></a>
+      <a class="nav-item nav-link active" href="#">Contact<span class="sr-only"></span></a>
+   
+    </div>
+  </div>
+</nav>	
+<div>
+<br>
+
+<big>
+hello user..
+</big>
+<br>
+<form>
+<br>
+City, Area or Locality: <select class="custom-select" style="width:200px;">
+  <option selected/>
+  <option value="1">Banjara Hills</option>
+  <option value="2">Dilsukhnagar</option>
+  <option value="3">Habsiguda</option>
+<option value="4">Secunderabd</option>
+<option value="5">Begumpet</option>
+<option value="6">Punjagutta</option>
+<option value="7">Koti</option>
+<option value="8">Kompally</option>
+<option value="9">Alwal</option>
+</select>
+Check in and Check Out:
+<input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
+
+<script>
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left'
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+</script>
+Adults : <select class="custom-select" style="width:70px;">
+  <option selected/>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+Children : <select class="custom-select" style="width:70px;">
+  <option selected/>
+  <option value="1">1</option>
+  <option value="2">2</option>	
+  <option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+Hotel class: <select class="custom-select" style="width:60px;">
+  <option selected/>
+  <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>
+</select>
+<button type="button" class="btn btn-outline-primary">Check</button>
+<br>
+</form></div>
+<hr>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<h3 font="Times New Roman" align="center">FAQ's</h3>
+<footer class="p-3 mb-2 bg-secondary text-white"><section>
+	<h5>Why Book Hotels on the Countrys Best Travel Site ?</h5>
+	<p>Planning a vacation or business trip, and havent found a hotel yet?
+Then use our web portal to find a hotel, which suits you in every way. The best
+travel site in India, TechnotelEngine has the largest database of hotels in the
+country and outside. Our user-friendly website makes online hotel booking an easy task, which can be completed in mere
+minutes.</p>
+	<h5>How to book hotels on TechnotelEngine.com?</h5>
+	<p>Now, suppose you are travelling to Goa. All you have to do is click on
+the Hotels tab on the homepage, and press the Domestic button. After typing
+Goa under the I WANT TO GO header, select your option. Then, enter the
+check-in and check-out dates, and tell us the number of adults and children,
+for whom the booking is to be made. On clicking the Search Hotels button, all
+the accommodation options are displayed on a single page. To make your task
+easier, our portal is provided with filters that you can use to narrow down
+your search. You can refine the results on the basis of star category,
+location, area, price range and even the facilities you want.</p>
+	<h5>What TechnotelEngine.com has in store for you?</h5>
+	<p>We have all sorts of hotels, ranging from luxury to cheap, so whatever be your requirement, you will get the accommodation.
+When you find the hotel of your choice, just click on its name to see its
+detailed description. Apart from Goa, our database includes myriad properties
+in all holiday and business destinations in India. Our payment gateway is
+totally secure, so all your bank details are safe. A smooth transfer process
+means that making payment is as swift as searching the hotel. 
+
+
+
+																									 
+
+
+So, whether you are looking for budget
+or upscale hotels in Delhi, Shimla, Mumbai, Chennai or any other destination,
+visit TechnotelEngine, and get the best deal.</p>
+	</section></div>  </footer>
+
+
+
+  
+
+</body>
+</html>
