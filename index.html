@@ -41,7 +41,7 @@ hello user..
 <form>
 <br>
 City, Area or Locality: <select class="custom-select" style="width:200px;" required>
-  <option selected/>
+    <option selected/>
   <option value="1">Banjara Hills</option>
   <option value="2">Dilsukhnagar</option>
   <option value="3">Habsiguda</option>
@@ -54,8 +54,8 @@ City, Area or Locality: <select class="custom-select" style="width:200px;" requi
 </select>
 Check in:<input type="date" name="daterange" style="width:160px;" />
 Check Out:<input type="date" name="daterange" style="width:160px;" />
-Adults : <select class="custom-select" style="width:70px;" required>
-  <option selected/>
+Adults : <select id="adults" class="custom-select" style="width:70px;" required>
+  <option selected value="0" />
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
@@ -66,8 +66,8 @@ Adults : <select class="custom-select" style="width:70px;" required>
 <option value="8">8</option>
 <option value="9">9</option>
 </select>
-Children : <select class="custom-select" style="width:70px;" required>
-  <option selected/>
+Children : <select id="children" class="custom-select" style="width:70px;" required>
+  <option selected value="0" />
   <option value="1">1</option>
   <option value="2">2</option>	
   <option value="3">3</option>
@@ -85,7 +85,7 @@ Hotel class: <select class="custom-select" style="width:60px;" required>
   <option value="4">4</option>
   <option value="5">5</option>
 </select>
-<button onclick="window.location.href='hotels.html'"type="button" class="btn btn-outline-primary">Check</button>
+<button onclick="checkFunction();" type="button" class="btn btn-outline-primary">Check</button>
 <br>
 </form></div>
 <hr>
@@ -96,6 +96,21 @@ Hotel class: <select class="custom-select" style="width:60px;" required>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script>
+function checkFunction()
+{
+  var nA=0,nC=0;
+  nA=document.getElementById("adults").value;
+  nC=document.getElementById("children").value;
+  if(nA==0){
+    alert("invalid selection");}
+    else if(nA!=0)
+      {       
+        window.location.href="Github/technotelengine/hotels.html";
+      }
+}
+</script>
+
 <h3 font="Times New Roman" align="center">FAQ's</h3>
 <footer class="p-3 mb-2 bg-secondary text-white"><section>
 	<h5>Why Book Hotels on the Countrys Best Travel Site ?</h5>
