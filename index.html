@@ -40,8 +40,8 @@ hello user..
 <br>
 <form>
 <br>
-City, Area or Locality: <select class="custom-select" style="width:200px;" required>
-    <option selected/>
+City, Area or Locality: <select id="area" class="custom-select" style="width:200px;" required>
+    <option selected value="0"/>
   <option value="1">Banjara Hills</option>
   <option value="2">Dilsukhnagar</option>
   <option value="3">Habsiguda</option>
@@ -52,8 +52,8 @@ City, Area or Locality: <select class="custom-select" style="width:200px;" requi
 <option value="8">Kompally</option>
 <option value="9">Alwal</option>
 </select>
-Check in:<input type="date" name="daterange" style="width:160px;" />
-Check Out:<input type="date" name="daterange" style="width:160px;" />
+Check in:<input type="date" id="in" name="daterange" style="width:160px;" />
+Check Out:<input type="date" id="out" name="daterange" style="width:160px;" />
 Adults : <select id="adults" class="custom-select" style="width:70px;" required>
   <option selected value="0" />
   <option value="1">1</option>
@@ -78,8 +78,8 @@ Children : <select id="children" class="custom-select" style="width:70px;" requi
 <option value="8">8</option>
 <option value="9">9</option>
 </select>
-Hotel class: <select class="custom-select" style="width:60px;" required>
-  <option selected/>
+Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" required>
+  <option value="0" selected/>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="4">4</option>
@@ -87,7 +87,7 @@ Hotel class: <select class="custom-select" style="width:60px;" required>
 </select>
 <button onclick="checkFunction();" type="button" class="btn btn-outline-primary">Check</button>
 <br>
-</form></div>
+</form>
 <hr>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -100,10 +100,13 @@ Hotel class: <select class="custom-select" style="width:60px;" required>
 function checkFunction()
 {
   var nA=0,nC=0;
-  nA=document.getElementById("adults").value;
+  
+      nA=document.getElementById("adults").value;
   nC=document.getElementById("children").value;
+  
   if(nA==0){
-    alert("invalid selection");}
+      alert("invalid selection");}
+      
     else if(nA!=0)
       {       
         window.location.href="hotels.html";
@@ -150,6 +153,6 @@ visit TechnotelEngine, and get the best deal.</p>
 
 
   
-
+</div>
 </body>
 </html>

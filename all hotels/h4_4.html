@@ -60,7 +60,15 @@
   
 <br>
         Contact :  081435 73890
-
+        <br>NO of Room: <select id="noRooms" class="custom-select" style="width : 60px;">
+            <option selected/>
+            <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+          <button type="button" onclick="book();" class="btn btn-outline-primary">Book</button>
 
     </p>
   </div>
@@ -78,5 +86,16 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </div><hr>
+    <script>
+        function book()
+        {
+          var nR;
+          nR=document.getElementById("noRooms").value;
+          if(nR==0)
+            alert("please select no of rooms");
+            else  
+              document.getElementById("h").innerHTML="Booking Successfull" + "<br>Your Reference id=#123456" + "<br><a href='../index.html'>Go back to Main Page</a>";
+        }
+      </script>
+  </div><hr>
 </body></html>
