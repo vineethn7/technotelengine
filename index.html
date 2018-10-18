@@ -85,7 +85,7 @@ Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" requir
   <option value="4">4</option>
   <option value="5">5</option>
 </select>
-<button onclick="checkFunction();" type="button" class="btn btn-outline-primary">Check</button>
+<button onclick="checkFunction()" type="button" class="btn btn-outline-primary">Check</button>
 <br>
 </form>
 <hr>
@@ -109,8 +109,24 @@ function checkFunction()
       
     else if(nA!=0)
       {       
-        window.location.href="hotels.html";
+        hotelclass();
       }
+}
+function hotelclass()
+{
+  var hc=0;
+  hc=document.getElementById("hotelc").value;
+  if(hc==5)
+    window.location.href="hotels.html/#list-h1";
+  if(hc==4)
+    window.location.href="hotels.html/#list-h2";
+  if(hc==3)
+    window.location.href="hotels.html/#list-h3";
+  if(hc==2)
+    window.location.href="hotels.html/#list-h4";
+  else if(hc==0)
+    alert("please select hotel class");
+
 }
 </script>
 
