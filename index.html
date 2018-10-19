@@ -102,6 +102,10 @@ Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" requir
   {
     var checkin=document.getElementById("in").value;
     var checkout=document.getElementById("out").value;
+     if(checkin ==0)
+      alert("check in date cannot be dd-mm-yy");
+    if(checkout==0)
+      alert("checkout date cannot be dd-mm-yy");
     if(checkin>checkout)
       alert("Check in date cannot be ahead of checkout date...invalid selection ");
     if(checkin<=checkout)
