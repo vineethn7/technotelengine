@@ -85,7 +85,7 @@ Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" requir
   <option value="4">4</option>
   <option value="5">5</option>
 </select>
-<button onclick="checkFunction()" type="button" class="btn btn-outline-primary">Check</button>
+<button onclick="areacheck()" type="button" class="btn btn-outline-primary">Check</button>
 <br>
 </form>
 <hr>
@@ -97,6 +97,23 @@ Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" requir
 <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 <script>
+  function areacheck()
+  {
+    var ar=document.getElementById("area").value;
+    if(ar==0)
+      alert("please select area ");
+    if(ar!=0)
+      datecheck();
+  }
+  function datecheck()
+  {
+    var checkin=document.getElementById("in").value;
+    var checkout=document.getElementById("out").value;
+    if(checkin>checkout)
+      alert("Check in date cannot be ahead of checkout date...invalid selection ");
+    if(checkin<=checkout)
+      checkFunction();
+}
 function checkFunction()
 {
   var nA=0,nC=0;
@@ -117,16 +134,15 @@ function hotelclass()
   var hc=0;
   hc=document.getElementById("hotelc").value;
   if(hc==5)
-    window.location.href="hotels.html/#list-h1";
+    window.location.href="hotels-5.html";
   if(hc==4)
-    window.location.href="hotels.html/#list-h2";
+    window.location.href="hotels-4.html";
   if(hc==3)
-    window.location.href="hotels.html/#list-h3";
+    window.location.href="hotels-3.html";
   if(hc==2)
-    window.location.href="hotels.html/#list-h4";
+    window.location.href="hotels-2.html";
   else if(hc==0)
     alert("please select hotel class");
-
 }
 </script>
 
