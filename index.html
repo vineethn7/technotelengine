@@ -1,187 +1,146 @@
-<!doctype html>
-<html lang="en">
-    <title>TechnotelEngine</title>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <!-- Bootstrap CSS -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+	
+	font-family:  TimesNewRoman;
+    background-color: #fdfdf1;
+}
+* {
+    box-sizing: border-box;
+}
+/* Add padding to containers */
+.container {
+	position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);
+    padding: 16px;width: 300px;
+    background-color: white;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+/* Set a style for the submit button */
+.registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.registerbtn:hover {
+    opacity: 1;
+}
+/* Add a blue text color to links */
+a {
+    color: dodgerblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+    background-color: #f1f1f1;
+	
+    text-align: center;
+}
+</style>
+</head>
+<body>
+	
+  <div class="container">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br> 
+<img style="float: center;" src="https://vineethn7.github.io/technotelengine/logo.png" width="80px" height="80px">
+   <h1>Sign up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    <form action="login.html" method="POST" name="form" onsubmit="return func2();" >
+        <fieldset>
+    <label ><b>Username</b>
+    <input type="text" id="uname" placeholder="Enter username" name="username" ></label>
+	
+    <label ><b>Email</b>
+    <input type="text" id="em" placeholder="Enter Email" name="email" ></label>
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">	
-<link rel="stylesheet" href="https://vineethn7.github.io/technotelengine/home.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-<link rel="icon" href="https://vineethn7.github.io/technotelengine/logo.png">
-    <title>TechnotelEngine</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark 	">
-     <img src="https://vineethn7.github.io/technotelengine/logo.png"width="40px" height="40px"><a class="navbar-brand" href="#">TechnotelEngine</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse  justify-content-end " id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="https://vineethn7.github.io/technotelengine/about.html">About <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link active" href="https://vineethn7.github.io/technotelengine/signup.html">Login-signup<span class="sr-only"></span></a>
-      <a class="nav-item nav-link active" href="https://vineethn7.github.io/technotelengine/contact.html">Contact<span class="sr-only"></span></a>
-   
-    </div>
+     <label><b>Phone No.</b>
+    <input type="text" id="pno" placeholder="Enter No." name="phone-number"></label>
+
+
+    <label ><b>Password</b>
+    <input type="password" id="ps" placeholder="Enter Password" name="psw"></label>
+
+    <label><b>Repeat Password</b>
+    <input type="password" id="psr" placeholder="Repeat Password" name="psw-repeat"></label>
+    <hr>
+    <input type="checkbox" required>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+</fieldset>
+    <div id="reg"><button type="submit"  class="registerbtn">Register</button>
+    </form>
+  	</div>
+    <p>Already have an account? <a href="https://vineethn7.github.io/technotelengine/login.html">Login in</a>.</p>
   </div>
-</nav>	
-<div class="container">
-<br>
-<big>
-hello user..
-</big>
-<br>
-<form>
-<br>
-City, Area or Locality: <select id="area" class="custom-select" style="width:200px;" required>
-    <option selected value="0"/>
-  <option value="1">Banjara Hills</option>
-  <option value="2">Dilsukhnagar</option>
-  <option value="3">Habsiguda</option>
-<option value="4">Secunderabad</option>
-<option value="5">Begumpet</option>
-<option value="6">Punjagutta</option>
-<option value="7">Koti</option>
-<option value="8">Kompally</option>
-<option value="9">Alwal</option>
-</select>
-Check in:<input type="date" id="in" name="daterange" style="width:160px;" />
-Check Out:<input type="date" id="out" name="daterange" style="width:160px;" />
-Adults : <select id="adults" class="custom-select" style="width:70px;" required>
-  <option selected value="0" />
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-</select>
-Children : <select id="children" class="custom-select" style="width:70px;" required>
-  <option selected value="0" />
-  <option value="1">1</option>
-  <option value="2">2</option>	
-  <option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-</select>
-Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" required>
-  <option value="0" selected/>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-</select>
-<button onclick="areacheck()" type="button" class="btn btn-outline-primary">Check</button>
-<br>
-</form>
-<hr>
-<script>
-  function areacheck()
-  {
-    var ar=document.getElementById("area").value;
-    if(ar==0)
-      alert("please select area ");
-    if(ar!=0)
-      datecheck();
-  }
-  function datecheck()
-  {
-    var checkin=document.getElementById("in").value;
-    var checkout=document.getElementById("out").value;
-     if(checkin ==0)
-      alert("check in date cannot be dd-mm-yy");
-    if(checkout==0)
-      alert("checkout date cannot be dd-mm-yy");
-    if(checkin>checkout)
-      alert("Check in date cannot be ahead of checkout date...invalid selection ");
-    if(checkin<=checkout)
-      checkFunction();
-}
-function checkFunction()
-{
-  var nA=0,nC=0;
-  
-      nA=document.getElementById("adults").value;
-  nC=document.getElementById("children").value;
-  
-  if(nA==0){
-      alert("invalid selection");}
-      
-    else if(nA!=0)
-      {       
-        hotelclass();
-      }
-}
-function hotelclass()
-{
-  var hc=0;
-  hc=document.getElementById("hotelc").value;
-  if(hc==5)
-    window.location.href="hotels-5.html";
-  if(hc==4)
-    window.location.href="hotels-4.html";
-  if(hc==3)
-    window.location.href="hotels-3.html";
-  if(hc==2)
-    window.location.href="hotels-2.html";
-  else if(hc==0)
-    alert("please select hotel class");
-}
+  <script>
+            function func2()
+            {
+                var error="";
+                   var a1=document.getElementById("uname").value;
+                   var a2=document.getElementById("em").value;
+                   var a3=document.getElementById("pno").value;
+                   var a4=document.getElementById("ps").value;
+                   var a5=document.getElementById("psr").value;
+                   if(a1=="" )
+                   {error += "enter valid username\n";}
+                    if(a2=="" )
+                   {error += "enter your mail id\n";}
+                    if(a3=="" )
+                   {error +="enter phone number\n";}
+                    if(a4=="" )
+                   {error +="enter passsword\n";}
+                    if(a5=="" )
+                   {error +="enter password again\n";}
+                    if(a4!=a5 )
+                   {error +="passwords must be same\n";}
+                   if(error!="")
+                     {alert(error + "\n");return false;}
+                    if(f!=5){
+                        alert("thanks for registering\n Now login into ur account\n" );return true;
+                            }
+                                       
+            }
+            
 </script>
-
-<h3 font="Times New Roman" align="center">FAQ's</h3>
-<footer class="p-3 mb-2 bg-secondary text-white"><section>
-	<h5>Why Book Hotels on the Countrys Best Travel Site ?</h5>
-	<p>Planning a vacation or business trip, and havent found a hotel yet?
-Then use our web portal to find a hotel, which suits you in every way. The best
-travel site in India, TechnotelEngine has the largest database of hotels in the
-country and outside. Our user-friendly website makes online hotel booking an easy task, which can be completed in mere
-minutes.</p>
-	<h5>How to book hotels on TechnotelEngine.com?</h5>
-	<p>Now, suppose you are travelling to Goa. All you have to do is click on
-the Hotels tab on the homepage, and press the Domestic button. After typing
-Goa under the I WANT TO GO header, select your option. Then, enter the
-check-in and check-out dates, and tell us the number of adults and children,
-for whom the booking is to be made. On clicking the Search Hotels button, all
-the accommodation options are displayed on a single page. To make your task
-easier, our portal is provided with filters that you can use to narrow down
-your search. You can refine the results on the basis of star category,
-location, area, price range and even the facilities you want.</p>
-	<h5>What TechnotelEngine.com has in store for you?</h5>
-	<p>We have all sorts of hotels, ranging from luxury to cheap, so whatever be your requirement, you will get the accommodation.
-When you find the hotel of your choice, just click on its name to see its
-detailed description. Apart from Goa, our database includes myriad properties
-in all holiday and business destinations in India. Our payment gateway is
-totally secure, so all your bank details are safe. A smooth transfer process
-means that making payment is as swift as searching the hotel. 
-
-
-
-																									 
-
-
-So, whether you are looking for budget
-or upscale hotels in Delhi, Shimla, Mumbai, Chennai or any other destination,
-visit TechnotelEngine, and get the best deal.</p>
-	</section></div>  </footer>
-
-
-
-  
-</div>
 </body>
 </html>
