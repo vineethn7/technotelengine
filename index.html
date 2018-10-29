@@ -33,62 +33,82 @@
   </div>
 </nav>	
 <div class="container">
-<br>
+  <div class="p-3 mb-2 bg-secondary text-white">
 <big>
 hello user..
 </big>
 <br>
 <form>
 <br>
-City, Area or Locality: <select id="area" class="custom-select" style="width:200px;" required>
-    <option selected value="0"/>
-  <option value="1">Banjara Hills</option>
-  <option value="2">Dilsukhnagar</option>
-  <option value="3">Habsiguda</option>
-<option value="4">Secunderabad</option>
-<option value="5">Begumpet</option>
-<option value="6">Punjagutta</option>
-<option value="7">Koti</option>
-<option value="8">Kompally</option>
-<option value="9">Alwal</option>
-</select>
-Check in:<input type="date" id="in" name="daterange" style="width:160px;" />
-Check Out:<input type="date" id="out" name="daterange" style="width:160px;" />
-Adults : <select id="adults" class="custom-select" style="width:70px;" required>
-  <option selected value="0" />
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-</select>
-Children : <select id="children" class="custom-select" style="width:70px;" required>
-  <option selected value="0" />
-  <option value="1">1</option>
-  <option value="2">2</option>	
-  <option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5</option>
-<option value="6">6</option>
-<option value="7">7</option>
-<option value="8">8</option>
-<option value="9">9</option>
-</select>
-Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" required>
-  <option value="0" selected/>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-</select>
-<button onclick="areacheck()" type="button" class="btn btn-outline-primary">Check</button>
+
+  <div class="row">
+      <div class="col">
+          Area or Locality: <select id="area" class="custom-select" style="width:200px;" required>
+          <option selected value="0"/>
+        <option value="1">Banjara Hills</option>
+        <option value="2">Dilsukhnagar</option>
+        <option value="3">Habsiguda</option>
+      <option value="4">Secunderabad</option>
+      <option value="5">Begumpet</option>
+      <option value="6">Punjagutta</option>
+      <option value="7">Koti</option>
+      <option value="8">Kompally</option>
+      <option value="9">Alwal</option>
+      </select></div>
+               
+      <div class="col">
+          Check in:<input type="date" id="in" name="daterange" style="width:160px;" /></div>
+          <div class="col">
+      Check Out:<input type="date" id="out" name="daterange" style="width:160px;" />
+      </div>  
+  
+  </div>
+  <div class="row">
+          
+<div class="col">
+    Adults : <select id="adults" class="custom-select" style="width:70px;" required>
+        <option selected value="0" />
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      </select></div>
+      <div class="col">
+          Children : <select id="children" class="custom-select" style="width:70px;" required>
+            <option selected value="0" />
+            <option value="1">1</option>
+            <option value="2">2</option>	
+            <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          </select></div>
+          <div class="col">
+              Hotel class: <select id="hotelc"class="custom-select" style="width:60px;" required>
+                <option value="0" selected/>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select></div>
+
+            </div><br>
+</div>
+
+<div class="d-flex justify-content-end">
+<button onclick="areacheck()" type="button" class="btn btn-primary">Check</button></div>
 <br>
 </form>
 <hr>
+
 <script>
   function areacheck()
   {
@@ -142,9 +162,8 @@ function hotelclass()
     alert("please select hotel class");
 }
 </script>
-
 <h3 font="Times New Roman" align="center">FAQ's</h3>
-<footer class="p-3 mb-2 bg-secondary text-white"><section>
+<footer class="p-3 mb-2"><section>
 	<h5>Why Book Hotels on the Countrys Best Travel Site ?</h5>
 	<p>Planning a vacation or business trip, and havent found a hotel yet?
 Then use our web portal to find a hotel, which suits you in every way. The best
