@@ -81,13 +81,12 @@ a {
 <br>
 <br>
 <br>
-<br>
-<div class="change">
+<br> 
 <img style="float: center;" src="https://vineethn7.github.io/technotelengine/logo.png" width="80px" height="80px">
    <h1>Sign up</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
-    <form action="login.html"  onsubmit="return func2();" name="form" method="POST">
+    <form action="login.html" method="POST" name="form" onsubmit="return func2();" >
         <fieldset>
     <label ><b>Username</b>
     <input type="text" id="uname" placeholder="Enter username" name="username" ></label>
@@ -108,13 +107,13 @@ a {
     <input type="checkbox" required>
     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 </fieldset>
-    <div id="reg"><button type="submit" class="registerbtn">Register</button>
+    <div id="reg"><button type="submit"  class="registerbtn">Register</button>
     </form>
   	</div>
-    <p>Already have an account? <a href="login.html">Login in</a>.</p>
-  </div></div> 
+    <p>Already have an account? <a href="https://vineethn7.github.io/technotelengine/login.html">Login in</a>.</p>
+  </div>
   <script>
- function func2()
+            function func2()
             {
                 var error="";
                    var a1=document.getElementById("uname").value;
@@ -134,15 +133,14 @@ a {
                    {error +="enter password again\n";}
                     if(a4!=a5 )
                    {error +="passwords must be same\n";}
-                   if(a1=="vineeth")
-                        {error +="'username vineeth' is already taken\n";}
                    if(error!="")
                      {alert(error + "\n");return false;}
                     if(error==""){
-                        alert("thanks for registering\n");
+                        alert("thanks for registering\n Now login into ur account\n");return true;
                             }
-                                         
-            }           
+                                       
+            }
+            
 </script>
 </body>
 </html>
